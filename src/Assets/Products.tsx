@@ -1,5 +1,5 @@
 interface ProductCard {
-	id: string;
+	id: string | number;
 	title: string;
 	description: string;
 	price: number;

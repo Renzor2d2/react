@@ -1,60 +1,56 @@
 main {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
-
-
 
 .details-container,
 .sales-block {
-  width: 1080px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	width: 1080px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .columns-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .product-images-block,
 .product-description-block,
 .product-checkout-block {
-  width: 340px;
-  padding: 10px;
-  margin: 10px
+	width: 340px;
+	padding: 10px;
+	margin: 10px;
 }
 
 /* IMAGES */
 .product-images-block {
-  display: flex;
+	display: flex;
 }
 
 .product-images {
-  width: 44px;
-  margin: 3px;
+	width: 44px;
+	margin: 3px;
 }
 
 .mini-img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
 }
 
 .big-img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
+	width: 280px;
+	height: 280px;
+	object-fit: cover;
 }
 
-
 /* DESCRIPTION */
-.product-description-block {
+/* .product-description-block {
   flex-direction: column;
 }
 
@@ -97,12 +93,11 @@ main {
 .product-description {
   margin-top: 30px;
   line-height: 20px;
-}
+} */
 
 /* CHECKOUT */
 
-
-.product-checkout-block {
+/* .product-checkout-block {
   flex-direction: column;
 }
 
@@ -173,97 +168,96 @@ main {
 
 .cart-btn:hover {
   background: #ff5151;
-}
+} */
 
 /* SALES */
 .sales-block {
-  margin: 20px 0;
-  justify-content: center;
+	margin: 20px 0;
+	justify-content: center;
 }
 
 .sales-title {
-  text-align: center;
-  font-size: 40px;
+	text-align: center;
+	font-size: 40px;
 }
 
 .cart-section {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 #productscart,
 #total {
-  width: 400px;
-  min-height: 200px;
-  padding: 10px;
-  background-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	width: 400px;
+	min-height: 200px;
+	padding: 10px;
+	background-color: #eaeaea;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .products {
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
 }
 
 /* CARDS */
 .product-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
-
 .product-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
 .product-info {
-  padding: 20px;
-  box-sizing: border-box;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .product-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  word-wrap: break-word;
-  display: block;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	word-wrap: break-word;
+	display: block;
 }
 
 .product-description {
-  font-size: 12px;
-  font-weight: 400;
-  color: #383838;
-  margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #383838;
+	margin-bottom: 5px;
 }
 
 .product-price-block {
-  display: flex;
-  margin: 5px 0;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	margin: 5px 0;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .product-price-block .product-price {
-  font-size: 20px;
-  font-weight: 700;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 .product-price-block .product-discount {
-  font-size: 12px;
-  font-weight: 700;
-  color: #428f13;
+	font-size: 12px;
+	font-weight: 700;
+	color: #428f13;
 }
 
 .product-tax-policy {
-  font-size: 10px;
-  font-weight: 300;
+	font-size: 10px;
+	font-weight: 300;
 }

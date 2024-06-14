@@ -1,4 +1,4 @@
-import styles from "./Home.module.css";
+// import styles from "./Home.module.css";
 import Navbar from "../components/Navbar.tsx";
 import Hero from "../components/Hero.tsx";
 import Footer from "../components/Footer.tsx";
@@ -10,8 +10,11 @@ export default function Home() {
 		<>
 			<Navbar />
 			<Hero first={"Tecnologia"} second={"Renovada"} />
-			<main>
-				<div className={styles["product-container"]} id="products">
+			<main className="w-full flex  justify-center items-center p-[20px]">
+				<div
+					className="w-[1080px] flex flex-wrap justify-between"
+					id="products"
+				>
 					{products.map((item) => (
 						<ProductCard
 							id={item.id}
